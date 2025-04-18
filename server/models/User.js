@@ -3,11 +3,6 @@ import mongoose from 'mongoose';
 // Создаём таблицу (схему) для юзера
 const UserSchema = new mongoose.Schema(
     {
-        id: {
-            type: String, // Тип данных 
-            required: true, // Обязательная или нет
-            unique: true // Уникальная или нет
-        },
         email: {
             type: String,
             required: true,
